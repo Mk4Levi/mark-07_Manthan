@@ -1,0 +1,81 @@
+@font-face {font-family: "OctemberScript";
+    src: url("https://db.onlinewebfonts.com/t/7e033da6ebcf38cf86cbf2c0c0924f24.eot"); /* IE9*/
+    src: url("https://db.onlinewebfonts.com/t/7e033da6ebcf38cf86cbf2c0c0924f24.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("https://db.onlinewebfonts.com/t/7e033da6ebcf38cf86cbf2c0c0924f24.woff2") format("woff2"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/7e033da6ebcf38cf86cbf2c0c0924f24.woff") format("woff"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/7e033da6ebcf38cf86cbf2c0c0924f24.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("https://db.onlinewebfonts.com/t/7e033da6ebcf38cf86cbf2c0c0924f24.svg#OctemberScript") format("svg"); /* iOS 4.1- */
+}
+
+*{
+    --primary-blue: #58F3D1;
+    --secondary-blue: #ade0e4;
+    --primary-lack: #212121;
+    margin: 0;
+    font-family: "OctemberScript";
+}
+
+body{
+    background: linear-gradient(var(--primary-blue), var(--secondary-blue));
+    color: var(--primary-lack);
+    display: grid;
+    place-content: center;
+    padding: 1rem;
+    row-gap: 0.8rem;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+.inputtext{
+    border-radius: 9px;
+    border-color: var(--primary-lack);
+    border-width: medium;
+    background-color: rgb(237, 236, 236);
+    outline: none;
+    height: 10rem;
+}
+
+.inputtext::placeholder {
+    font-weight: lighter;
+  }
+
+button{
+    padding: 1rem 2rem;
+    width: max-content;
+    font-weight: 700;
+    font-size: small;
+    background-color: transparent;
+    color: var(--primary-lack);
+    border-radius: 7px;
+    border-color: var(--primary-lack);
+    margin: auto;
+    outline: none;
+}
+
+button:hover{
+    background-color: var(--primary-lack);
+    color: var(--primary-blue);
+}
+
+.info{
+    width: 35vw;
+    text-align: justify;
+}
+
+@media (max-width:660px){
+    h1{
+        font-size: 1.5em;
+    }
+
+    .inputtext{
+        width: 85vw;
+    }
+    .info{
+        width: 90vw;
+    }
+    p{
+        font-size: 0.8em;
+    }
+}
