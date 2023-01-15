@@ -51,6 +51,7 @@ button{
     border-color: var(--primary-lack);
     margin: auto;
     outline: none;
+    cursor: pointer;
 }
 
 button:hover{
