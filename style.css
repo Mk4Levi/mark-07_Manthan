@@ -45,7 +45,7 @@ button{
     width: max-content;
     font-weight: 700;
     font-size: small;
-    background-color: transparent;
+    background-color: #81ff6a;
     color: var(--primary-lack);
     border-radius: 7px;
     border-color: var(--primary-lack);
